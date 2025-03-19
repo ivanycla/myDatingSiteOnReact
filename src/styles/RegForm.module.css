@@ -1,4 +1,9 @@
-/* RegForm.module.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
     background: linear-gradient(45deg, #fff3e0, #ffecb3);
     min-height: 100vh;

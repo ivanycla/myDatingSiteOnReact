@@ -9,7 +9,7 @@ import ChatPage from './pages/ChatPage.jsx';
 import Login from './pages/login.jsx';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}> 
       <Routes>
         <Route path="/about" element={<About/>}/>
         <Route path="/chat/:userId" element={<ChatPage/>} />

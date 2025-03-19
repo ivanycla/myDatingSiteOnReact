@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+Описание проекта: Этот сайт знакомств был создан как pet-project для изучения React и работы с бэком. Он предназначен для демонстрации различных навыков разработки и включает в себя множество функций, таких как:Общение с ботом, принимающим случайные сообщения с мок-сервера.
+Интеграция с Firebase, обеспечивающая хранение данных и выполнение различных функций приложения.Полноценная регистрация и вход в аккаунт для пользователей работает кривавото именно регистрация проблема с Firebase.
+>>>>>>> 3b29c973f6ef2afc7052098460ac9846208b1c6b

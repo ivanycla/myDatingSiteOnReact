@@ -1,0 +1,7 @@
+
+.delete{
+all: unset;
+}
+.delete:hover{
+    cursor: pointer;
+}

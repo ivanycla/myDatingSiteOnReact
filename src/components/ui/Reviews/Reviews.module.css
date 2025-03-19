@@ -1,0 +1,61 @@
+.reviewCard {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: (33.333% - 20px);
+    flex-grow: 1;
+}
+
+.reviewCard:hover {
+    transform: translateY(-5px);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.userPhoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffb300;
+}
+
+.userName {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.timeline {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.reviewText {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    position: relative;
+    z-index: 1;
+}
+
+.honeycombPattern {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 150px;
+    height: 150px;
+    background: url('i.webp') no-repeat;
+    opacity: 0.1;
+    transform: rotate(15deg);
+}

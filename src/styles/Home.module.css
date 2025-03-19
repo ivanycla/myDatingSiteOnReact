@@ -1,0 +1,81 @@
+/* Существующие стили остаются без изменений */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255,100,100,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(100,100,255,0.2) 0%, transparent 50%);
+  animation: float 20s linear infinite;
+  z-index: -1;
+}
+
+
+.navLink {
+  text-decoration: none;
+  color: orangered;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  
+  /* Новые свойства для кнопки */
+  display: inline-block;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.navLink:hover {
+  color: #fff;
+  background: rgba(255, 69, 0, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 69, 0, 0.3);
+}
+
+
+@keyframes float {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  margin-top: 20px; 
+}
+
+.montserratTitle {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  padding: 10px;
+}
+

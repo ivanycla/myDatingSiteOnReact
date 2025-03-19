@@ -1,0 +1,10 @@
+#mainContent {
+    position: relative; 
+    padding-bottom: 20px; 
+    height: 200px; background-color: #ddd;
+  }
+  
+  #message {
+    position: absolute;
+    bottom: 0; 
+  }
